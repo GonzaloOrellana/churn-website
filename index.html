@@ -4,14 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Churn</title>
-<!-- ══════════════════════════════════════════════════════════════
-     🖼 FAVICON — ícono que aparece en la pestaña del navegador
-     Para agregar tu favicon:
-     1. Creá una imagen cuadrada de 512×512px con el logo Churn
-     2. Convertila a .ico o .png en: https://favicon.io/
-     3. Guardala como "favicon.png" en la misma carpeta que el HTML
-     4. El link de abajo ya está listo — solo necesitás el archivo
-     ══════════════════════════════════════════════════════════════ -->
 <link rel="icon" type="image/png" href="images/favicon.png">
 <link rel="apple-touch-icon" href="images/favicon.png">
 
@@ -87,13 +79,6 @@ nav {
 @keyframes tickerMove { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
 
 /* ── HERO ── */
-/* ═══════════════════════════════════════════════════════════
-   📸 IMAGEN 1 — FONDO DEL HERO
-   Línea ~55 en el CSS (buscar: "url('hero-bg.png')")
-   Reemplazar 'hero-bg.png' por el nombre de tu imagen.
-   La imagen debe estar en la misma carpeta que el HTML.
-   Tamaño recomendado: 1920×1080px mínimo, formato WebP/JPG.
-   ═══════════════════════════════════════════════════════════ */
 .hero { background: url('images/hero-bg.jpg') center center / cover no-repeat; min-height: calc(100vh - 107px); display: grid; grid-template-columns: 1fr 1fr; align-items: center; padding: 60px 5% 80px; position: relative; overflow: hidden; }
 .hero::after { content:''; position:absolute; bottom:-1px; left:0; right:0; height:60px; background: var(--cream); clip-path: ellipse(55% 100% at 50% 100%); }
 .hero-bg-circle { display:none; }
@@ -1134,12 +1119,7 @@ footer { background:var(--choco); padding:64px 5% 28px; }
     <p class="sec-body">En Churn creemos que la excelencia está en los detalles. No seguimos modas ni fórmulas rápidas: perfeccionamos el arte de hacer churros para ofrecer una experiencia que combina tradición y calidad.</p>
     <div class="founders">
       <div class="founder-avs">
-        <!-- ════════════════════════════════════════════════════
-             📸 FOTO FUNDADOR 1 (Sebastian)
-             Reemplazar el <div class="founder-av"> con:
-             <div class="founder-av"><img src="sebastian.jpg" alt="Sebastian"></div>
-             Tamaño recomendado: 100×100px, recortada en círculo, JPG/PNG.
-             ════════════════════════════════════════════════════ -->
+        <!--FOTO FUNDADORES-->
         <div class="founder-av"><img src="images/Sebastian.png" alt="Sebastian"></div>
         <div class="founder-av"><img src="images/Evelyn.png" alt="Evelyn"></div>
       </div>
@@ -1152,16 +1132,6 @@ footer { background:var(--choco); padding:64px 5% 28px; }
   <div class="pillars reveal">
 
     <!-- Card 1: Ingredientes — wide, yellow -->
-    <!-- ════════════════════════════════════════════════════════════════
-         📸 FOTO TARJETA 1 — "Ingredientes seleccionados"
-         Para agregar una foto de fondo a esta card, reemplazá el
-         bloque del ícono decorativo grande (svg class="pillar-icon-bg")
-         por una imagen así:
-           <img class="pillar-icon-bg" src="ingredientes.jpg"
-                style="object-fit:cover;opacity:.18;border-radius:24px;">
-         Foto sugerida: trigo, harina, ingredientes sobre mesa de madera.
-         La opacidad (.18) hace que se vea sutil bajo el texto.
-         ════════════════════════════════════════════════════════════════ -->
     <div class="pillar">
       <!-- Large decorative bg icon -->
       <img class="pillar-icon-bg" src="https://images.pexels.com/photos/6287244/pexels-photo-6287244.jpeg" style="width: 100%; height: 100%; object-fit: cover;opacity:.15;border-radius:24px;">
@@ -1170,13 +1140,6 @@ footer { background:var(--choco); padding:64px 5% 28px; }
     </div>
 
     <!-- Card 2: Hechos al momento — coral -->
-    <!-- ════════════════════════════════════════════════════════════════
-         📸 FOTO TARJETA 2 — "Hechos al momento"
-         Reemplazar svg class="pillar-icon-bg" por:
-           <img class="pillar-icon-bg" src="hecho-al-momento.jpg"
-                style="object-fit:cover;opacity:.15;border-radius:24px;">
-         Foto sugerida: manos amasando, masa fresca, cocina artesanal.
-         ════════════════════════════════════════════════════════════════ -->
     <div class="pillar">
       <!-- Large decorative bg icon -->
       <img class="pillar-icon-bg" src="images/galeria/churros2.jpeg" style="width: 100%; height: 100%; object-fit: cover;opacity:.15;border-radius:24px;">
@@ -1185,13 +1148,6 @@ footer { background:var(--choco); padding:64px 5% 28px; }
     </div>
 
     <!-- Card 3: Rellenos — dark chocolate -->
-    <!-- ════════════════════════════════════════════════════════════════
-         📸 FOTO TARJETA 3 — "Rellenos que sorprenden"
-         Reemplazar svg class="pillar-icon-bg" por:
-           <img class="pillar-icon-bg" src="rellenos.jpg"
-                style="object-fit:cover;opacity:.18;border-radius:24px;">
-         Foto sugerida: dulce de leche, chocolate derritiéndose, crema.
-         ════════════════════════════════════════════════════════════════ -->
     <div class="pillar">
       <!-- Large decorative bg icon -->
       <img class="pillar-icon-bg" src="images/galeria/galeria2.jpeg" style="width: 100%; height: 100%; object-fit: cover;opacity:.15;border-radius:24px;">
@@ -1292,61 +1248,61 @@ footer { background:var(--choco); padding:64px 5% 28px; }
     <div class="carousel-mask">
       <div class="carousel-track" id="carouselTrack">
 
-        <!-- 📸 IMAGEN 3 — PRODUCTO 1: Clásico → img src="churroClasico.png" (ya integrado) -->
+        <!-- 📸 IMAGEN 3 — PRODUCTO 1: Clásico -->
         <div class="product-card" data-cat="churros">
           <div class="prod-canvas-wrap"><img src="images/productosSinFondo/churroClasico.png" alt="Churro Clásico"></div>
           <div class="prod-name">Clásico</div>
         </div>
 
-        <!-- 📸 IMAGEN 11 — PRODUCTO 2: Relleno de DDL → reemplazar canvas por <img src="relleno-ddl.png"> -->
+        <!-- 📸 IMAGEN 11 — PRODUCTO 2: Relleno de DDL -->
         <div class="product-card" data-cat="churros">
           <div class="prod-canvas-wrap"><img src="images/productosSinFondo\churroDDLGemini.png" alt="Churro DDL"></div>
           <div class="prod-name">Relleno de DDL</div>
         </div>
 
-        <!-- 📸 IMAGEN 4 — PRODUCTO 3: Chocolate → reemplazar canvas por <img src="chocolate.png"> -->
+        <!-- 📸 IMAGEN 4 — PRODUCTO 3: Chocolate -->
         <div class="product-card" data-cat="churros">
           <div class="prod-canvas-wrap"><img src="images/productosSinFondo/ChurroChocolateGemini.png" alt="Churro Chocolate"></div>
           <div class="prod-name">Chocolate</div>
         </div>
 
-        <!-- 📸 IMAGEN 12 — PRODUCTO 4: Chocolate Blanco → reemplazar canvas por <img src="chocolate-blanco.png"> -->
+        <!-- 📸 IMAGEN 12 — PRODUCTO 4: Chocolate Blanco -->
         <div class="product-card" data-cat="churros">
           <div class="prod-canvas-wrap"><img src="images/productosSinFondo/churroBlancoGemini.png" alt="Churro blanco"></div>
           <div class="prod-name">Chocolate Blanco</div>
         </div>
 
-        <!-- 📸 IMAGEN 5 — PRODUCTO 5: Crema Pastelera → reemplazar canvas por <img src="crema-pastelera.png"> -->
+        <!-- 📸 IMAGEN 5 — PRODUCTO 5: Crema Pastelera -->
         <div class="product-card" data-cat="churros">
           <div class="prod-canvas-wrap"><img src="images/productosSinFondo/cremapastelera.png" alt="Churro pastelera"></div>
           <div class="prod-name">Crema Pastelera</div>
         </div>
 
-        <!-- 📸 IMAGEN 9 — PRODUCTO 6: Chipa → reemplazar canvas por <img src="chipa.png"> -->
+        <!-- 📸 IMAGEN 9 — PRODUCTO 6: Chipa  -->
         <div class="product-card" data-cat="otros">
           <div class="prod-canvas-wrap"><img src="images/productosSinFondo/chipaGemini.png" alt="Chipa"></div>
           <div class="prod-name">Chipa</div>
         </div>
 
-        <!-- 📸 IMAGEN 10 — PRODUCTO 7: Berlinesa → reemplazar canvas por <img src="berlinesa.png"> -->
+        <!-- 📸 IMAGEN 10 — PRODUCTO 7: Berlinesa -->
         <div class="product-card" data-cat="otros">
           <div class="prod-canvas-wrap"><img src="images/productosSinFondo/berlinesaGemini.png" alt="Berlinesa"></div>
           <div class="prod-name">Berlinesa</div>
         </div>
 
-        <!-- 📸 IMAGEN 7 — PRODUCTO 8: Dona Pink → reemplazar canvas por <img src="dona-pink.png"> -->
+        <!-- 📸 IMAGEN 7 — PRODUCTO 8: Dona Pink -->
         <div class="product-card" data-cat="donas">
           <div class="prod-canvas-wrap"><img src="images/productosSinFondo/donaPink.png" alt="dona-pink"></div>
           <div class="prod-name">Dona Pink</div>
         </div>
 
-        <!-- 📸 IMAGEN 8 — PRODUCTO 9: Dona Oreo → reemplazar canvas por <img src="dona-oreo.png"> -->
+        <!-- 📸 IMAGEN 8 — PRODUCTO 9: Dona Oreo-->
         <div class="product-card" data-cat="donas">
           <div class="prod-canvas-wrap"><img src="images/productosSinFondo/donaOreo.png" alt="Dona Oreo"></div>
           <div class="prod-name">Dona Oreo</div>
         </div>
 
-        <!-- 📸 IMAGEN 13 — PRODUCTO 10: Dona Chocotorta → reemplazar canvas por <img src="dona-chocotorta.png"> -->
+        <!-- 📸 IMAGEN 13 — PRODUCTO 10: Dona Chocotorta -->
         <div class="product-card" data-cat="donas">
           <div class="prod-canvas-wrap"><img src="images/productosSinFondo/donaChocotorta.png" alt="Dona Chocotorta"></div>
           <div class="prod-name">Dona Chocotorta</div>
@@ -1464,39 +1420,36 @@ footer { background:var(--choco); padding:64px 5% 28px; }
   </div>
   <div class="insta-grid reveal" id="instaGrid">
     <!-- ══════════════════════════════════════════════════════════════════
-         📸 FOTOS DE INSTAGRAM — Reemplazar las 6 imágenes
+         📸 FOTOS DE INSTAGRAM
          Para cada foto:
-           Opción A — imagen local:  <img src="insta1.jpg" alt="Churn Instagram">
-           Opción B — URL directa:   <img src="https://..." alt="Churn Instagram">
          Tamaño recomendado: 600×600px cuadrada, JPG/WebP.
-         El <a href="..."> debe apuntar al link del post en Instagram.
          ══════════════════════════════════════════════════════════════════ -->
-    <!-- 📸 INSTAGRAM 1 → cambiar href al link del post y src a la foto -->
+    <!-- 📸 INSTAGRAM 1 →  -->
     <a href="https://www.instagram.com/churreria.churn/" target="_blank" class="insta-item">
       <img src="images/fotosIG/chipasAlSol.jpg" alt="Churn en Instagram — foto 1">
       <div class="insta-overlay"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></div>
     </a>
-    <!-- 📸 INSTAGRAM 2 → cambiar href al link del post y src a la foto -->
+    <!-- 📸 INSTAGRAM 2 -->
     <a href="https://www.instagram.com/churreria.churn/" target="_blank" class="insta-item">
       <img src="images/fotosIG/churroymate.jpg" alt="Churn en Instagram — foto 2">
       <div class="insta-overlay"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></div>
     </a>
-    <!-- 📸 INSTAGRAM 3 → cambiar href al link del post y src a la foto -->
+    <!-- 📸 INSTAGRAM 3 -->
     <a href="https://www.instagram.com/churreria.churn/" target="_blank" class="insta-item">
       <img src="images/fotosIG/churroPlaya.jpg" alt="Churn en Instagram — foto 3">
       <div class="insta-overlay"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></div>
     </a>
-    <!-- 📸 INSTAGRAM 4 → cambiar href al link del post y src a la foto -->
+    <!-- 📸 INSTAGRAM 4 -->
     <a href="https://www.instagram.com/churreria.churn/" target="_blank" class="insta-item">
       <img src="images/fotosIG/publicacion.jpg" alt="Churn en Instagram — foto 4">
       <div class="insta-overlay"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></div>
     </a>
-    <!-- 📸 INSTAGRAM 5 → cambiar href al link del post y src a la foto -->
+    <!-- 📸 INSTAGRAM 5 -->
     <a href="https://www.instagram.com/churreria.churn/" target="_blank" class="insta-item">
       <img src="images/fotosIG/fotoMayorista.jpeg" alt="Churn en Instagram — foto 5">
       <div class="insta-overlay"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></div>
     </a>
-    <!-- 📸 INSTAGRAM 6 → cambiar href al link del post y src a la foto -->
+    <!-- 📸 INSTAGRAM 6 -->
     <a href="https://www.instagram.com/churreria.churn/" target="_blank" class="insta-item">
       <img src="images/fotosIG/cliente_chicas.jpeg" alt="Churn en Instagram — foto 6">
       <div class="insta-overlay"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></div>
@@ -1596,7 +1549,7 @@ footer { background:var(--choco); padding:64px 5% 28px; }
     <div class="footer-links"><div class="footer-links-title">Menú</div><ul><li><a href="#nosotros">Nosotros</a></li><li><a href="#menu">Productos</a></li><li><a href="#mayorista">Venta Mayorista</a></li><li><a href="#ubicacion">Ubicación</a></li></ul></div>
     <div><div class="footer-links-title">Listo para pedir?</div><p class="footer-cta-text">Hacé tu pedido por WhatsApp. Te respondemos en minutos.</p><a href="https://api.whatsapp.com/send/?phone=541128673102&text=Hola!+Quiero+hacer+un+pedido" target="_blank" class="btn-footer-wpp"><svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>Pedir Ahora</a></div>
   </div>
-  <div class="footer-bottom"><p class="footer-dev">Diseñado y desarrollado por <a href="https://gonzaorellana.com.ar/portfolio/" target="_blank" class="dev-link">Gonzalo Orellana</a></p><p class="footer-copy">© 2025 Churn. Todos los derechos reservados.</p></div>
+  <div class="footer-bottom"><p class="footer-dev">Diseñado y desarrollado por <a href="https://www.gonzaorellana.com.ar/" target="_blank" class="dev-link">Gonzalo Orellana</a></p><p class="footer-copy">© 2025 Churn. Todos los derechos reservados.</p></div>
 </footer>
 
 <script>
